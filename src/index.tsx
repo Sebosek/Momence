@@ -1,15 +1,24 @@
+import '@app/index.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {QueryClient, QueryClientProvider} from "react-query";
+import reportWebVitals from '@app/reportWebVitals';
+import {CurrencyProvider} from "@app/Context/Currency/Provider";
+import App from '@app/App';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const el = document.getElementById('root') as HTMLElement;
+const root = ReactDOM.createRoot(el!);
+
+const queryClient = new QueryClient();
+
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <CurrencyProvider>
+        <App />
+      </CurrencyProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 
