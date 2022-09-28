@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Momence/static/css/main.a338ce9e.css",
+    "main.js": "/Momence/static/js/main.e807817a.js",
+    "static/js/787.5ea03da6.chunk.js": "/Momence/static/js/787.5ea03da6.chunk.js",
+    "index.html": "/Momence/index.html",
+    "main.a338ce9e.css.map": "/Momence/static/css/main.a338ce9e.css.map",
+    "main.e807817a.js.map": "/Momence/static/js/main.e807817a.js.map",
+    "787.5ea03da6.chunk.js.map": "/Momence/static/js/787.5ea03da6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a338ce9e.css",
+    "static/js/main.e807817a.js"
+  ]
+}
