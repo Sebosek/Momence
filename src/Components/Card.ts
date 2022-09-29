@@ -1,7 +1,4 @@
-import Color from "color";
-import {CONFIG, styled} from '@app/styling';
-
-const TRANSPARENT = Color(CONFIG.theme.colors.primary).alpha(0.55);
+import {styled} from '@app/styling';
 
 const Card = styled('div', {
   background: '$base',
@@ -19,8 +16,6 @@ const Card = styled('div', {
       true: {
         marginTop: '$5',
         marginBottom: '$5',
-        // border: `1px solid ${TRANSPARENT}`,
-        // boxShadow: '0px 8px 12px -8px $colors$gray200',
       }
     }
   },

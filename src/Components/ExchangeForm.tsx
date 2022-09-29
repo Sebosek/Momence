@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FormEventHandler, SyntheticEvent, useEffect, useState} from "react";
+import React, {ChangeEvent, SyntheticEvent, useEffect, useState} from "react";
 import {styled} from "@app/styling";
 import Exchange from "@app/Components/Exchange";
 import Flex from "@app/Components/Flex";

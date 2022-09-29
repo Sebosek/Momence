@@ -1,7 +1,7 @@
 import {useQuery} from 'react-query';
 import {ExchangeRate} from '@app/Types/ExchangeRate';
 
-const URL = '/en/financial-markets/foreign-exchange-market/central-bank-exchange-rate-fixing/central-bank-exchange-rate-fixing/daily.txt';
+const URL = 'https://cnbproxy.azurewebsites.net/api/proxyfn';
 
 const parse = (line: string): ExchangeRate | null => {
   if (!line)
@@ -44,7 +44,7 @@ const useExchangeRatesQuery = () => {
     }
 
     const parts = rows.slice(2, rows.length);
-    return parts.map(parse).filter(item => item !== null).map(i => <ExchangeRate>i);
+    return parts.map(parse).filter(item => item !== null).map(i => i as ExchangeRate);
   });
 };
 

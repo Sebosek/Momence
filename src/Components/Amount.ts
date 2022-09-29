@@ -1,4 +1,4 @@
-import {styled, css} from '@app/styling';
+import {styled} from '@app/styling';
 import Text from '@app/Components/Text';
 
 const Amount = styled(Text, {
